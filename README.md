@@ -51,11 +51,14 @@ to upgrade to Ubuntu 18.04.
 ## Build AOSP
 
 ```
-$ source 
+$ source build/envsetup.sh
 $ lunch aosp_rpi3-eng
 $ m
 ```
-This will take an hour or two...
+The command 'm' is a wrapper for 'make', with the additional benefit that it
+will use all available CPU cores (see \filePath{build/soong/ui/build/config.go).
+
+Even so, the build will take an hour or two...
 
 
 ## Install Linaro toolchain
@@ -72,12 +75,12 @@ $ export ARCH=arm
 $ export CROSS_COMPILE=arm-linux-gnueabihf-
 $ cd kernel/brcm/rpi3/
 $ make lineageos_rpi3_defconfig
-$ make -j N zImage
+$ make -j $(nproc) zImage
 $ make dtbs
 $ croot
 ```
 
-## Write to SD card using dd
+## Write to SD card
 
 You will need a micro SD card of at least 4 GB. Ideally it should
 be class 10 or better.

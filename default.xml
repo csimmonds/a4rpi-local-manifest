@@ -6,7 +6,7 @@
   <project path="device/rpiorg/rpi3" name="a4rpi-device" revision="pie" remote="a4rpi"/>
   <project path="scripts" name="a4rpi-scripts" revision="pie" remote="a4rpi"/>
   <project path="kernel/brcm/rpi3" name="android_kernel_brcm_rpi3" revision="lineage-15.1" remote="lineage" />
-  <project path="vendor" name="proprietary_vendor_brcm" revision="lineage-15.1" remote="lineage"/>
+  <project path="vendor/brcm" name="proprietary_vendor_brcm" revision="lineage-15.1" remote="lineage"/>
   <remove-project name="platform/external/swiftshader"/>
   <project path="external/swiftshader" name="android_external_swiftshader" revision="lineage-15.1" remote="lineage"/>
 </manifest>
