@@ -27,13 +27,13 @@ Then set it up following the steps given here:
 ## Download AOSP
 
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-9.0.0_r30
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-9.0.0_r50
 ```
 
 If you want to reduce the size of the download and you don't care too much
 about the git history you can do a shallow clone by setting the depth to 1:
 ```
-$ repo init --depth=1 -u https://android.googlesource.com/platform/manifest -b android-9.0.0_r30
+$ repo init --depth=1 -u https://android.googlesource.com/platform/manifest -b android-9.0.0_r50
 ```
 ## Get the Raspberry Pi code and sync
 
