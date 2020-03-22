@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="a4rpi" fetch="https://github.com/csimmonds" />
-  <remote name="lineage" fetch="https://github.com/lineage-rpi"/>
+  <remote name="arpi" fetch="https://github.com/android-rpi"/>
+  <remote name="denx" fetch="https://gitlab.denx.de/u-boot"/>
   
   <project path="device/rpiorg/rpi3" name="a4rpi-device" revision="pie" remote="a4rpi"/>
-  <project path="scripts" name="a4rpi-scripts" revision="pie" remote="a4rpi"/>
-  <project path="kernel/brcm/rpi3" name="android_kernel_brcm_rpi3" revision="lineage-15.1" remote="lineage" />
-  <project path="vendor/brcm" name="proprietary_vendor_brcm" revision="lineage-15.1" remote="lineage"/>
-  <remove-project name="platform/external/swiftshader"/>
-  <project path="external/swiftshader" name="android_external_swiftshader" revision="lineage-15.1" remote="lineage"/>
+  <project path="scripts" name="a4rpi-scripts" revision="android10" remote="a4rpi"/>
+
+  <remove-project name="platform/external/mesa3d"/>
+  <project path="external/mesa3d" name="external_mesa3d" revision="rpi3-19.1" remote="arpi"/>
+  <project path="external/drm_gralloc" name="external_drm_gralloc" revision="rpi3-19.1" remote="a4rpi"/>
+  <project path="kernel/rpi" name="kernel_rpi" revision="arpi-4.19.y" remote="a4rpi"/>
+  <project path="hardware/rpi" name="hardware_rpi" revision="android10" remote="a4rpi"/>
+  <project path="u-boot" name="u-boot" revision="refs/tags/v2020.01" remote="denx"/>
 </manifest>
