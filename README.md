@@ -36,6 +36,7 @@ Choose a directory for the AOSP source, e.g. $HOME/aosp:
 ```
 $ export ANDROID_BUILD_TOP=$HOME/aosp
 $ mkdir $ANDROID_BUILD_TOP && cd $ANDROID_BUILD_TOP
+```
 
 Select the version of AOSP you want:
 ```
