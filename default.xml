@@ -4,7 +4,7 @@
   <remote name="arpi" fetch="https://github.com/android-rpi"/>
   <remote name="denx" fetch="https://gitlab.denx.de/u-boot"/>
   
-  <project path="device/rpiorg/rpi3" name="a4rpi-device" revision="pie" remote="a4rpi"/>
+  <project path="device/rpiorg/rpi3" name="a4rpi-device" revision="android10" remote="a4rpi"/>
   <project path="scripts" name="a4rpi-scripts" revision="android10" remote="a4rpi"/>
 
   <remove-project name="platform/external/mesa3d"/>
