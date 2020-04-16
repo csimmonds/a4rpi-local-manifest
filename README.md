@@ -117,7 +117,7 @@ device it is. Then run the script below, giving the device name as the
 parameter. For example, if the card reader is `/dev/mmcblk0`, the
 command would be:
 ```
-$ scripts/write-sdcard-beagleboneblack.sh mmcblk0
+$ scripts/write-sdcard-rpi3.sh mmcblk0
 ```
 Note: I use bmap-tool to write the card because it is faster and
 safer than dd. If you don't want to use bmap-tool, go ahead and edit the script
