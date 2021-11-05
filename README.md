@@ -1,4 +1,4 @@
-# Building Android for Raspberry Pi
+# Building Android for Raspberry Pi 3B
 
 # General notes
 This is project experimental; it is not guaranteed to build on all possible
